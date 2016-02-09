@@ -10,6 +10,8 @@ double findKSortedArrays(vector<int>& nums1, vector<int>& nums2, int k)
 
     if (l1 >l2)
         nums1.swap(nums2);
+    l1=nums1.size();
+    l2=nums2.size();
 
     int k1=(fmin(l1,k)-1)/2;
     int k2=k-k1-2;
